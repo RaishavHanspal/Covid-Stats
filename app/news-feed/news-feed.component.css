@@ -1,0 +1,45 @@
+.NewsTab{
+    border: solid rgb(235, 233, 233) 0.5px;
+}
+.NewsTab{
+    background-color: white;
+}
+
+@media only screen and (max-width: 359px){
+  .Title{font-size: 15px; font-weight: 200;}
+  .NewsHeader{font-size:8px;}
+  .NewsHeaderDate{font-size:8x;}
+}
+@media only screen and (max-width: 401px) and (min-width:360px) {
+  .Title{font-size: 15px; font-weight: 200;}
+  .NewsHeader{font-size:9px;}
+  .NewsHeaderDate{font-size:8x;}
+}
+
+@media only screen and (max-width: 480px) and (min-width:400px)  {
+  .Title{font-size: 20px; font-weight: 200;}
+  .NewsHeader{font-size:10px;}
+  .NewsHeaderDate{font-size:8x;}
+}
+@media only screen and (max-width: 525px) and (min-width: 481px)  {
+  .Title{font-size: 25px; font-weight: 200;}
+  .NewsHeader{font-size:11px;}
+  .NewsHeaderDate{font-size:8x;}
+}
+
+@media only screen and (max-width: 800px) and (min-width:526px)  {
+  .Title{font-size: 30px; font-weight: 200;}
+  .NewsHeader{font-size:11px;}
+  .NewsHeaderDate{font-size:8x;}
+}
+
+@media only screen and (max-width: 1200px) and (min-width:801px) {
+  .Title{font-size: 35px; font-weight: 200;}
+  .NewsHeader{font-size:14px;}
+  .NewsHeaderDate{font-size:8x;}
+}
+@media only screen and (min-width: 1201px) {
+  .Title{font-size: 40px; font-weight: 200;}
+  .NewsHeader{font-size:16px;}
+  .NewsHeaderDate{font-size:8x;}
+}

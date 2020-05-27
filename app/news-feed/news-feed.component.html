@@ -1,0 +1,36 @@
+<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRId8Rx51n3UO5qFIIw80za65ng8kKpXiQZ0B99yGWOpdNBWNSG&usqp=CAU' style = 'width:4%; margin:1.5%; margin-bottom: 2%;'>
+<span class="Title" style="color: #2D74B0; font-weight:bold;">World Health Organization</span>
+<div *ngFor = "let new of news">
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false"
+                       class="NewsTab"  style="flex: 1 1 auto;">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <p class="NewsHeader">{{new.title}}</p>
+      </mat-panel-title>
+      <!-- <p class = "NewsHeaderDate" style="float: right; margin-top: 10px; margin-right: 10px;">{{new.pubDate | date: 'dd MMM yyyy'}}</p> -->
+    </mat-expansion-panel-header>
+    <p class = "NewsHeaderDate"><u>{{new.pubDate | date: 'EEEE, dd MMMM yyyy, hh:mm a'}}</u></p>
+    <p class = "NewsLine" [innerHTML] = "new.description"></p>
+  </mat-expansion-panel>
+</div>
+
+<hr>
+
+<img src='https://upload.wikimedia.org/wikipedia/commons/4/45/US-CDC-Logo.png' style = 'width:4%; margin:1.5%; margin-bottom: 2%;'>
+<span class="Title" style="color: #2D74B0; font-weight:bold;">Centers for Disease Control and Prevention</span>
+<div *ngFor = "let new of newscdc">
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false"
+                       class="NewsTab"  style="flex: 1 1 auto;">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <p class="NewsHeader">{{new.title}}</p>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p class = "NewsHeaderDate"><u>{{new.pubDate | date: 'EEEE, dd MMMM yyyy, hh:mm a'}}</u></p>
+    <p class = "NewsLine" [innerHTML] = "new.description"></p>
+    <a class = "NewsLine" href = "{{new.link}}" [innerHTML] = "new.link"></a>
+  </mat-expansion-panel>
+</div>
+
