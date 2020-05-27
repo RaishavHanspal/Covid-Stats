@@ -1,0 +1,55 @@
+<div class="Status_tabs">
+  <button [disabled]='true' mat-button class="Field-Title-Main" style="color: #750f08; background-color: #ffcc99"><strong>Confirmed</strong><br>  {{confirmed}}</button>
+  <button [disabled]='true' mat-button class="Field-Title"  style="color:#002e63; background-color:#b0e0e6; cursor:initial;"><strong>Active</strong><br> {{active}}</button>
+  <button [disabled]='true' mat-button class="Field-Title" style="color: #014421;background-color:#98fb98;  cursor:initial;"><strong>Recovered</strong><br> {{recovered}}</button>
+  <button [disabled]='true' mat-button class="Field-Title"  style="color: #560319; background-color: #ff6767;  cursor:initial;"><strong>Deceased</strong><br> {{deaths}}</button>
+  <!-- <button mat-button class="Field-Title"><strong>New Deaths</strong><br> {{newDead}}</button> -->
+  </div>
+  <div style="text-align: center; margin-bottom: 15px;">
+    <button class="MoreButton" mat-button (click)='testdataflag=!testdataflag'><strong>{{testdataflag?'Hide Details' :'More Details'}}</strong></button>
+    <span *ngIf= "testdataflag">
+      <div style="text-align: center;">
+        <br>
+        <span *ngIf='lastupdatedtime!="Invalid Date"'>Last updated : {{lastupdatedtime| date: 'EEEE, dd MMMM  yyyy, hh:mm a'}} </span><br><br>
+      <span><strong *ngIf = "confirmed" style='font-size:15px; color: #696969;'>Total Cases</strong></span><br>
+      <span><strong style='font-size:20px; '>{{confirmed}}</strong> (+{{newConfirmed}})</span><br><br>
+      <span><strong *ngIf = "totalTested"  style='font-size:15px; color: #696969;'>Total Tested</strong></span><br>
+      <span><a href="{{source}}"><strong style='font-size:19px; '>{{totalTested}}</strong></a></span><br>
+      <!-- <span><strong *ngIf = "newConfirmed"  style='font-size:15px; color: #696969;'>New Cases</strong></span><br>
+      <span><strong style='font-size:19px; '>{{newConfirmed}}</strong></span><br><br>
+      <span><strong *ngIf = "newDeaths"  style='font-size:15px; color: #696969;'>New Deaths</strong></span><br>
+      <span><strong style='font-size:19px; '>{{newDeaths}}</strong></span><br><br> -->
+      </div>
+    </span>
+  </div>
+  <div style="text-align: center; margin-bottom: 20px;">
+    <button class="MoreButton" mat-button (click)=Table()><strong>{{tableFlag?'Hide Table' : 'Show State Wise'}}</strong></button>
+
+    <span *ngIf= "tableFlag">
+        <button class="MoreButton" mat-button routerLink = '/State'><strong>Expand Table</strong></button>
+    </span>
+  </div>
+  <br>
+  <div *ngIf= "tableFlag">
+    <body style="margin-left:40px;margin-right:40px;max-width: height 560px;">
+      <app-state></app-state>
+    </body>
+    <br>
+  </div>
+  <div *ngIf= "chartConfirmed" class="Chart" style='width: 95%;'>
+    <canvas id='canvas1'>{{chartConfirmed}}</canvas>
+  </div>
+  <br>
+  <div *ngIf= "chartDeadVSSafe" class="Chart" style='width: 95%;'>
+    <canvas id='canvas2'>{{chartDeadVSSafe}}</canvas>
+  </div>
+  <br>
+  <div *ngIf= "chartNewConfirmed" class="Chart" style='width: 95%;'>
+    <canvas id='canvas4'>{{chartNewConfirmed}}</canvas>
+  </div>
+  <br>
+  <div *ngIf= "chartNewDeadVSSafe" class="Chart" style='width: 95%;'>
+    <canvas id='canvas3'>{{chartNewDeadVSSafe}}</canvas>
+  </div>
+
+

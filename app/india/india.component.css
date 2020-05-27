@@ -1,0 +1,361 @@
+/* @media only screen and (max-width: 401px){
+    .Field-Title-Main{
+       display: none;
+    }
+    .Field-Title{
+        font-weight: 400;
+        padding:15px;
+        margin:5px;
+        font-size: 13px;
+    }
+    .Chart{
+      background-color: whitesmoke;max-width: 340px;margin:auto;padding:0px;
+  }
+}
+
+@media only screen and (max-width: 480px) and (min-width:400px)  {
+    .Field-Title-Main{
+       display: none;
+    }
+    .Field-Title{
+        font-weight: 400;
+        padding:25px;
+        margin:10px;
+        font-size: 18px;
+    }
+    .Chart{
+      background-color: whitesmoke;max-width: 440px;margin:auto;padding:2px;
+  }
+}
+@media only screen and (max-width: 525px) and (min-width: 481px)  {
+    .Field-Title-Main{
+      display:none;
+    }
+    .Field-Title{
+        font-weight: 400;
+        padding:28px;
+        margin:12px;
+        font-size: 18px;
+    }
+    .Status_tabs{
+       width:100%;
+    }
+    .Chart{
+      background-color: whitesmoke;max-width: 480;margin:auto;padding:5px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width:526px)  {
+    .Field-Title-Main{
+        font-weight: 300;
+        padding:20px;
+        margin:8px;
+        font-size: 20px;
+    }
+    .Field-Title{
+        font-weight: 300;
+        padding:20px;
+        margin:8px;
+        font-size: 16px;
+    }
+    .Chart{
+    background-color: whitesmoke;max-width: 600px;margin:auto;padding:10px;
+}
+}
+
+@media only screen and (min-width: 801px)  {
+    .Field-Title-Main{
+        font-weight: 200;
+        padding:40px;
+        margin:20px;
+        font-size: 25px;
+    }
+    .Field-Title{
+        font-weight: 200;
+        padding:40px;
+        margin:20px;
+        font-size: 20px;
+    }
+    .Status_tabs{
+        text-align: center;
+        margin-bottom: 20px;
+    }.Chart{
+      background-color: whitesmoke;max-width: 700px;margin:auto;padding:10px;
+  }
+} */
+/* Laptops */
+@media only screen and (min-width: 1200px){
+  table {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: black;
+  }
+    .Field-Title-Main{
+      font-weight: 200;
+      padding:40px;
+      margin:20px;
+      font-size: 25px;
+  }
+  .Field-Title{
+      font-weight: 200;
+      padding:40px;
+      margin:20px;
+      font-size: 20px;
+  }
+  .Status_tabs{
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  .Chart{
+    background-color: whitesmoke;max-width: 700px;margin:auto;padding:10px;
+}
+}
+
+/* Large Tablets */
+@media only screen and (max-width: 1199px) and (min-width:1023px)  {
+  table {
+    margin-left: 18px;
+    margin-right: 18px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    color: black;
+  }
+    .Field-Title-Main{
+      font-weight: 300;
+      padding:36px;
+      margin:18px;
+      font-size: 25px;
+  }
+  .Field-Title{
+      font-weight: 300;
+      padding:36px;
+      margin:18px;
+      font-size: 22px;
+  }
+  .Status_tabs{
+      text-align: center;
+      margin-bottom: 20px;
+  }.Chart{
+    background-color: whitesmoke;max-width: 700px;margin:auto;padding:10px;
+}
+
+}
+
+/* Tablets */
+@media only screen and (max-width: 1022px) and (min-width: 767px)  {
+    table {
+      margin-left: 15px;
+      margin-right: 15px;
+      width: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 100;
+      color: black;
+    }
+    .Field-Title-Main{
+      font-weight: 400;
+      padding:32px;
+      margin:16px;
+      font-size: 18px;
+  }
+  .Field-Title{
+      font-weight: 400;
+      padding:32px;
+      margin:16px;
+      font-size: 20px;
+  }
+  .Status_tabs{
+      text-align: center;
+      margin-bottom: 20px;
+  }.Chart{
+    background-color: whitesmoke;max-width: 700px;margin:auto;padding:10px;
+}
+}
+
+/* Large Phones */
+@media only screen and (max-width: 766px) and (min-width:680px)  {
+  table {
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    color: black;
+  }
+  .Field-Title-Main{
+    display: none;
+}
+.Field-Title{
+    font-weight: 500;
+    padding:28px;
+    margin:12px;
+    font-size: 20px;
+}
+.Status_tabs{
+    text-align: center;
+    margin-bottom: 20px;
+}.Chart{
+  background-color: whitesmoke;max-width: 600px;margin:auto;padding:8px;
+}
+}
+/* custom1 */
+@media only screen and (max-width: 679px) and (min-width:483px)  {
+.Field-Title-Main{
+  display:none;
+}
+.Field-Title{
+  font-weight: 500;
+  padding:24px;
+  margin:12px;
+  font-size: 18px;
+}
+.Status_tabs{
+  text-align: center;
+  margin-bottom: 20px;
+}.Chart{
+background-color: whitesmoke;max-width: 500px;margin:auto;padding:5px;
+}}
+
+
+/* phones */
+@media only screen and (max-width: 482px) and (min-width:400px) {
+  table {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14x;
+    font-weight: 600;
+    color: black;
+  }
+  .Field-Title-Main{
+   display:none;
+}
+.Field-Title{
+    font-weight: 500;
+    padding:12px;
+    margin:6px;
+    font-size: 20px;
+}
+.Status_tabs{
+    text-align: center;
+    margin-bottom: 20px;
+}.Chart{
+  background-color: whitesmoke;max-width: 400px;margin:auto;padding:3px;
+}}
+/* custom3 */
+@media only screen and (max-width: 399px) and (min-width:370px) {
+  table {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14x;
+    font-weight: 600;
+    color: black;
+  }
+  .Field-Title-Main{
+   display:none;
+}
+.Field-Title{
+    font-weight: 500;
+    padding:10px;
+    margin:4px;
+    font-size: 20px;
+}
+.Status_tabs{
+    text-align: center;
+    margin-bottom: 20px;
+}.Chart{
+  background-color: whitesmoke;max-width: 400px;margin:auto;padding:3px;
+}}
+  /* small phones */
+@media only screen and (max-width: 369px) and (min-width:341px){
+  table {
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: black;
+  }
+  .Field-Title-Main{
+    display: none;
+}
+.Field-Title{
+    font-weight: 500;
+    padding:10px;
+    margin:4px;
+    font-size: 18px;
+}
+.Status_tabs{
+    text-align: center;
+    margin-bottom: 20px;
+}.Chart{
+  background-color: whitesmoke;max-width: 300px;margin:auto;padding:2px;
+}
+}
+/* custom2 */
+@media only screen and (max-width: 340px) {
+  table {
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: black;
+  }
+  .Field-Title-Main{
+    display: none;
+}
+.Field-Title{
+    font-weight: 500;
+    padding:12px;
+    margin:8px;
+    font-size: 12px;
+}
+.Status_tabs{
+    text-align: center;
+    margin-bottom: 20px;
+}.Chart{
+  background-color: whitesmoke;max-width: 300px;margin:auto;padding:2px;
+}
+}
+
+
+
+
+
+
+a{
+    color:#6e5386;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px;
+}
+.Status_tabs{
+    text-align: center;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+}
+.MoreButton {
+  background-color: #5DADE2;color:white; margin:5px;border-radius: 100px;font-size: 15px;
+}
+.MoreButton:hover {
+  background: #5096c5;
+}
+
+
+
+
