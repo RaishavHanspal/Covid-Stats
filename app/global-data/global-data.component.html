@@ -1,0 +1,38 @@
+<div class="Status_tabs">
+    <button [disabled]='true' mat-button class="Field-Title-Main" style="color: #750f08; background-color: #ffcc99; cursor:initial"><strong>Confirmed</strong><br>  {{totalCases}}</button>
+    <button [disabled]='true' mat-button class="Field-Title"  style="color:#002e63; background-color:#b0e0e6; cursor:initial;"><strong>Active</strong><br> {{active}}</button>
+    <button [disabled]='true' mat-button class="Field-Title" style="color: #014421;background-color:#98fb98;  cursor:initial;"><strong>Recovered</strong><br> {{totalRecovered}}</button>
+    <button [disabled]='true' mat-button class="Field-Title"  style="color: #560319; background-color: #ff6767;  cursor:initial;"><strong>Deceased</strong><br> {{totalDead}}</button>
+</div>
+<div style="text-align: center; margin-bottom: 15px;">
+  <button class="MoreButton" mat-button (click)='testdataflag=!testdataflag'><strong>{{testdataflag?'Hide Details' :'More Details'}}</strong></button>
+  <span *ngIf= "testdataflag">
+    <div style="text-align: center;">
+      <br>
+      <span  *ngIf='lastupdatedtime!="Invalid Date"'> Last updated : {{lastupdatedtime| date: 'EEEE, dd MMMM  yyyy, hh:mm a'}}</span><br><br>
+    <span><strong  *ngIf = "totalCases" style='font-size:15px; color: #696969;'>Total Cases</strong></span><br>
+    <span><strong style='font-size:20px; '>{{totalCases}}</strong></span><br><br>
+    <span><strong *ngIf = "totalTests" style='font-size:15px; color: #696969;'>Total Tested</strong></span><br>
+    <span><strong style='font-size:20px; '>{{totalTests}} </strong></span><br><br>
+    </div>
+  </span>
+</div>
+<div style="text-align: center; margin-bottom: 20px;">
+<button class="MoreButton" mat-button (click)=Table()><strong>{{tableFlag?'Hide Table' : 'Show Country Wise'}}</strong></button>
+
+<span *ngIf= "tableFlag">
+    <button class="MoreButton" mat-button routerLink = '/Country'><strong>Expand Table</strong></button>
+</span>
+</div>
+<br>
+<div *ngIf= "tableFlag">
+  <body style="margin-left:40px;margin-right:40px;max-width: height 560px;">
+    <app-country></app-country>
+  </body>
+
+</div>
+<br>
+<div style="text-align: center;">
+  <div ><img src='https://images.haarets.co.il/image/fetch/w_640,q_auto,c_fill,f_auto/fl_any_format.preserve_transparency.progressive:none/https://www.haaretz.co.il/polopoly_fs/1.8735632!/image/1222590285.jpg' style='width: 95%; max-width:700px;height: auto; margin-top: -20px;' alt="corona"></div>
+</div>
+
