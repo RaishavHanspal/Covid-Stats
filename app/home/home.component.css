@@ -1,0 +1,23 @@
+h1{
+  color:#6e5386;
+  font-size: 25px;
+  font-weight: 300;}
+h2{
+    font-size: 22px;
+    font-weight: 300;
+}
+/* .Field-Title{
+
+} */
+.ActiveClosed{
+  color: #750f08; background-color: #ffcc99;
+  font-weight: 400;
+  padding:20px;
+  margin:10px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.ActiveClosed:hover{
+  color: #750f08;; background-color: #ecb680
+}
+

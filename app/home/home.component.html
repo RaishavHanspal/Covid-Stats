@@ -1,0 +1,36 @@
+
+<body><div ><img src='res/img/COVID-19.png' style='width: 100%; margin-top: -20px' alt="corona"/></div>
+  <!--  -->
+<div style="text-align: center;">
+  <span *ngIf='timeUpdate!="Invalid Date"'>Last updated : {{timeUpdate | date: 'EEEE, dd MMMM yyyy, hh:mm a'}}</span>
+<h1><strong>Total Cases:</strong></h1>
+<span><strong style='font-size:30px; '>{{totalCases}}</strong></span><br>
+<a routerLink = '/Country'>view by country</a>
+</div>
+<div>
+<div style="text-align: center;">
+  <button mat-button class="ActiveClosed" (click)="ActiveClosedflag = false"><strong>Active Cases</strong><br>  {{active}} </button>
+  <button mat-button class="ActiveClosed" (click)="ActiveClosedflag = true"><strong>Closed Cases</strong><br> {{closed}}</button>
+  </div><br>
+<div *ngIf="!ActiveClosedflag" style="text-align: center; margin: auto;" >
+  <button [disabled]='true' mat-button style="padding-left:60px;padding-right:60px;background-color: whitesmoke">
+  <strong style="font-size: 18px;"><u>ACTIVE CASES</u></strong><br>
+  <strong style="font-size: 20px;">{{active}}</strong><br>Patients Currently Infected <br>
+  <span style="font-size: 20px; font-weight: 600;color:#070768">{{mild}} ({{mildpercent}}%)</span><br>in mild condition.<br>
+  <span style="font-size: 20px; font-weight: 600;color:#ed1c24">{{critical}} ({{critpercent}}%)</span><br>in critical condition.
+</button>
+</div>
+<div *ngIf="ActiveClosedflag" style="text-align: center; margin: auto;" >
+<button [disabled]='true' mat-button style="padding-left:60px;padding-right:60px;background-color: whitesmoke">
+  <strong style="font-size: 18px;"><u>CLOSED CASES</u></strong><br>
+  <strong style="font-size: 20px;">{{closed}}</strong><br>Cases which had an outcome<br>
+  <span style="font-size: 20px; font-weight: 600;color:#008000">{{totalRecovered}} ({{Recpercent}}%)</span><br>Recovered.<br>
+  <span style="font-size: 20px; font-weight: 600;color:#ed1c24">{{totalDead}} ({{Deadpercent}}%)</span><br>Deaths.
+</button>
+</div>
+</div>
+<br>
+<br>
+</body>
+
+
