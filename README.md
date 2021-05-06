@@ -1,6 +1,4 @@
 # Covid-Stats
-Covid-Stats Angular source code.
-
 An application reporting COVID-19 pandemic, real time statistics and news.
 
 This is a reference application that provides real-time statistics for the global pandemic COVID-19, also known as Coronavirus disease.
